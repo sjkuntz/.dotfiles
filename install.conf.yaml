@@ -1,3 +1,24 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~','~/.config']
+- link:
+    ~/.bash_login:
+    ~/.bash_logout:
+    ~/.bashrc:
+    ~/.condarc:
+    ~/.config/onedrive/config: onedrive_config
+    ~/.config/user-dirs.dirs: xdg_dirs_config
+    ~/.dotfiles: ''
+    ~/.emacs.d/private/julia: spacemacs_layers/julia
+    ~/.emacs.d/private/jupyter: spacemacs_layers/jupyter
+    ~/.gitconfig:
+    ~/.pylintrc:
+    ~/.spacemacs:
+    ~/.vim:
+    ~/.vimrc:
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
