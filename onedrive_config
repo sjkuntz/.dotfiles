@@ -4,7 +4,7 @@
 # All values need to be enclosed in quotes
 # For explanations see the README.md or the man page.
 #
-sync_dir = "~/SYNC/"
+sync_dir = "~/sync/"
 skip_file = "~*|.~*|*CAR|CHG|EIGENVAL|IBZKPT|KPOINTS|PCDAT|REPORT|README|*.[^dpsx]*|*.d[^o]*|*.do[^ct]*|*.p[^op]*|*.po[^t]*|*.pp[^ast]*|*.s[^l]*|*.sl[^d]*|*.x[^l]*|*.xl[^almstw]*"
 # monitor_interval = "45"
 # skip_dir = ""

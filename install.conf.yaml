@@ -5,17 +5,17 @@
 
 - clean: ['~','~/.config']
 - link:
-    ~/.bash_login:
-    ~/.bash_logout:
-    ~/.bashrc:
-    ~/.condarc:
-    ~/.config/onedrive/config: onedrive_config
-    ~/.config/user-dirs.dirs: xdg_dirs_config
+    # ~/.bash_login:
+    # ~/.bash_logout:
+    # ~/.bashrc:
+    # ~/.condarc:
+    # ~/.config/onedrive/config: onedrive_config
+    # ~/.config/user-dirs.dirs: xdg_dirs_config
     ~/.dotfiles: ''
     ~/.emacs.d/private/julia: spacemacs_layers/julia
     ~/.emacs.d/private/jupyter: spacemacs_layers/jupyter
     ~/.gitconfig:
-    ~/.pylintrc:
+    # ~/.pylintrc:
     ~/.spacemacs:
     ~/.vim:
     ~/.vimrc:

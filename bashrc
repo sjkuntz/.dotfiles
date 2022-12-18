@@ -92,9 +92,16 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias octave-6.1.0='$HOME/octave-6.1.0/bin/octave'
+alias octave='$HOME/octave-6.1.0/bin/octave'
+export PATH="/home/sk/octave-6.1.0/bin:$PATH"
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# reroute depreciated MathematicaScript command
+alias MathematicaScript='wolframscript'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -117,6 +124,14 @@ if ! shopt -oq posix; then
 fi
 
 export TERM="xterm-256color"
+
+# octave alias for flatpak install
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu/
+#alias octave='flatpak run org.octave.Octave'
+export CASADIPATH=/home/sk/Documents/octave/casadi/
+
+# fix conky lineart?
+export PYTHONIOENCODING=utf-8
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
